@@ -1,8 +1,28 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { FaMobileAlt, FaMapMarkerAlt } from "react-icons/fa";
 import { HiMail } from "react-icons/hi";
+import emailjs from '@emailjs/browser';
+import toast from 'react-hot-toast';
 
 const Contact = () => {
+    const form = useRef();
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm(
+            'service_p5rt4en',
+            'template_ce8xyuh',
+            form.current,
+            '2e95VstjhAiOaaUxj'
+        )
+            .then((result) => {
+                e.target.reset();
+                toast.success('Message sent successfully!')
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+    };
 
     return (
         <>
@@ -43,26 +63,40 @@ const Contact = () => {
                         </div>
                         <div className='lg:w-[65%]'>
                             <h3 className='text-2xl font-semibold'>How Can I Help You?</h3>
-                            <form className='my-5'>
+                            <form
+                                ref={form}
+                                onSubmit={sendEmail}
+                                className='my-5'
+                            >
                                 <div className='sm:flex gap-5'>
                                     <div className='flex flex-col gap-6 sm:w-[50%]'>
                                         <input
+                                            name="user_name"
                                             type="text"
                                             placeholder="Full Name"
                                             className="input input-bordered"
                                         />
                                         <input
+                                            name="user_email"
                                             type="email"
                                             placeholder="Email Address"
                                             className="input input-bordered"
                                         />
                                         <input
+                                            name='subject'
                                             type="text"
                                             placeholder="subject"
                                             className="input input-bordered"
                                         />
                                     </div>
-                                    <textarea id="message" rows="4" className="sm:w-[50%] w-full sm:mt-0 mt-4 block p-2.5 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300" placeholder="Message..."></textarea>
+                                    <textarea
+                                        name="message"
+                                        id="message"
+                                        rows="4"
+                                        className="sm:w-[50%] w-full sm:mt-0 mt-4 block p-2.5 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300"
+                                        placeholder="Message...">
+
+                                    </textarea>
                                 </div>
                                 <button
                                     type='submit'
