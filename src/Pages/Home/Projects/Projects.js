@@ -23,9 +23,9 @@ const Projects = () => {
         }
     ]
     return (
-        <div className='container mx-auto'>
-            <h2 className='text-[25px] font-semibold mb-3'>Recent Projects</h2>
-            <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10'>
+        <div className='container mx-auto md:pt-0 pt-10'>
+            <h2 className='text-[25px] font-semibold mb-3 md:mx-0 mx-2'>Recent Projects</h2>
+            <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 md:mx-0 mx-2'>
                 {
                     projects.map((project, i) => <Project
                         key={i}
