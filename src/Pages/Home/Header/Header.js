@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import img from '../../../assets/profile_img.png';
 
 const Header = () => {
@@ -20,7 +21,9 @@ const Header = () => {
                                 Download Resume
                             </button>
                         </a>
-                        <button className='px-5 py-[10px] border-[#d5d5d5] border-2 rounded-3xl hover:bg-[#d5d5d5] hover:text-[#333] duration-300'>Contact</button>
+                        <Link to='/contact'>
+                            <button className='px-5 py-[10px] border-[#d5d5d5] border-2 rounded-3xl hover:bg-[#d5d5d5] hover:text-[#333] duration-300'>Contact</button>
+                        </Link>
                     </div>
                 </div>
             </div>
