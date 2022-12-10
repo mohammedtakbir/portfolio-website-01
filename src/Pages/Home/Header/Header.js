@@ -4,7 +4,7 @@ import img from '../../../assets/profile_img.png';
 const Header = () => {
 
     return (
-        <>
+        <div className='container mx-auto'>
             <div className='md:flex justify-center items-center md:py-[100px] md:px-[150px]'>
                 <div className='md:w-[45%]'>
                     <img className='w-[400px] h-[400px] border-[15px] border-white rounded-full mx-auto shadow-xl' src={img} alt="" />
@@ -24,7 +24,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 
