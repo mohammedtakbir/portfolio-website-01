@@ -36,7 +36,16 @@ const Contact = () => {
                     <div className="divider my-0"></div>
                 </div>
                 <div className='container mx-auto'>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7305.438312489121!2d90.50374027691828!3d23.72172116079032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b6673815557f%3A0x81321617f1c22aa5!2sTarabo!5e0!3m2!1sen!2sbd!4v1670672522783!5m2!1sen!2sbd" width="1440" height="200" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                    <div>
+                        <iframe
+                            className='block w-full'
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7305.438312489121!2d90.50374027691828!3d23.72172116079032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b6673815557f%3A0x81321617f1c22aa5!2sTarabo!5e0!3m2!1sen!2sbd!4v1670672522783!5m2!1sen!2sbd" style={{ border: 0 }}
+                            allowFullScreen=""
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade">
+
+                        </iframe>
+                    </div>
                     <div className='md:flex md:mt-16 mt-10 gap-5'>
                         <div className='lg:w-[30%]'>
                             <div className='flex gap-5 md:mb-9 mb-5'>

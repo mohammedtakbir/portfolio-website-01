@@ -20,12 +20,9 @@ const Navbar = () => {
                         }} className='text-sm font-medium text-gray-400 hover:text-[#333] duration-200' to='/'>Home</NavLink>
                     </li>
                     <li className='md:ml-10 md:mb-0 mb-4'>
-                        <a
-                            target='_blank'
-                            href='https://drive.google.com/file/d/1BAnYLIQUkhNqM8wUzqP3LiTRy4tyI-0w/view?usp=sharing'
-                            className='text-sm font-medium text-gray-400 hover:text-[#333] duration-200'>
-                            Resume
-                        </a>
+                        <NavLink style={({ isActive }) => {
+                            return isActive ? { color: '#333' } : undefined
+                        }} className='text-sm font-medium text-gray-400 hover:text-[#333] duration-200' to='/blogs'>Blogs</NavLink>
                     </li>
                     <li className='md:ml-10 md:mb-0 mb-4'>
                         <NavLink style={({ isActive }) => {
