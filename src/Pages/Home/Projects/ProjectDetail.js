@@ -13,7 +13,7 @@ const ProjectDetail = () => {
 
     useEffect(() => {
         setLoading(true)
-        fetch(`http://localhost:5000/projects-details/${id.id}`)
+        fetch(`https://portfolio-website-01.vercel.app/projects-details/${id.id}`)
             .then(res => res.json())
             .then(data => {
                 setLoading(false);

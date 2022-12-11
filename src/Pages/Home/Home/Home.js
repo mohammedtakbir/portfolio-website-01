@@ -4,14 +4,16 @@ import About from '../About/About';
 import Header from '../Header/Header';
 import Projects from '../Projects/Projects';
 import Skills from '../Skills/Skills';
+import WhatIDo from '../WhatIDo/WhatIDo';
 
 const Home = () => {
     return (
         <>
             <Header />
-            <About />
+            <WhatIDo />
             <Skills />
             <Projects />
+            <About />
             <Contact />
         </>
     );

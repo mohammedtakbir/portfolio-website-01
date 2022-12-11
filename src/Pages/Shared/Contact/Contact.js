@@ -8,6 +8,10 @@ const Contact = () => {
     const form = useRef();
     const sendEmail = (e) => {
         e.preventDefault();
+        const name = e.target.user_name.value;
+        if (name === '') {
+            toast.error('')
+        }
 
         emailjs.sendForm(
             'service_p5rt4en',
@@ -84,18 +88,21 @@ const Contact = () => {
                                             type="text"
                                             placeholder="Full Name"
                                             className="input input-bordered"
+                                            required
                                         />
                                         <input
                                             name="user_email"
                                             type="email"
                                             placeholder="Email Address"
                                             className="input input-bordered"
+                                            required
                                         />
                                         <input
                                             name='subject'
                                             type="text"
                                             placeholder="subject"
                                             className="input input-bordered"
+                                            required
                                         />
                                     </div>
                                     <textarea
@@ -103,8 +110,9 @@ const Contact = () => {
                                         id="message"
                                         rows="4"
                                         className="sm:w-[50%] w-full sm:mt-0 mt-4 block p-2.5 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300"
-                                        placeholder="Message...">
-
+                                        placeholder="Message..."
+                                        required
+                                    >
                                     </textarea>
                                 </div>
                                 <button

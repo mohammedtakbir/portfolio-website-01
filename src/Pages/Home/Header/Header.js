@@ -8,12 +8,13 @@ const Header = () => {
     return (
         <div className='container mx-auto'>
             <div className='md:flex justify-center items-center xl:py-[80px] md:py-[70px] pt-5 xl:px-[150px]'>
-                <div className='md:w-[45%]'>
+                <div className='md:w-[45%]' data-aos="fade-right" data-aos-duration="1500">
                     <img className='lg:w-[400px] w-[300px] lg:h-[400px] h-[300px] border-[10px] border-white rounded-full mx-auto shadow-xl' src={img} alt="" />
                 </div>
-                <div className='md:w-[52%] sm:pt-0 pt-10 md:mx mx-2'>
+                <div className='md:w-[52%] sm:pt-0 pt-10 md:mx mx-2' data-aos="fade-left" data-aos-duration="1500">
                     <h4 className='text-[#333]'>
                         <Typewriter
+
                             words={['Front-end Developer', 'React.js Developer', 'MERN Stack Developer']}
                             loop={true}
                         />

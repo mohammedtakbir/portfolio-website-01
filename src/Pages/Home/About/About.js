@@ -3,7 +3,7 @@ import img from '../../../assets/img2.jpg'
 
 const About = () => {
     return (
-        <div id='about' className='max-w-[1200px] mx-auto md:pb-16 pt-8'>
+        <div id='about' className='max-w-[1200px] mx-auto md:pt-16 pt-10' data-aos="zoom-in">
             <div className="hero">
                 <div className="hero-content flex-col md:flex-row items-start gap-6">
                     <img src={img} className="max-w-2xl mx-auto h-[450px] rounded-lg shadow-2xl" alt='' />
