@@ -2,63 +2,41 @@ import React from 'react';
 
 const WhatIDo = () => {
     return (
-        <div className='md:w-[800px] sm:w-full  md:mx-auto mx-2 md:mt-0 mt-10 my-8'>
-            <h2 className='text-[23px] font-semibold mb-3 md:mx-0 mx-2'>My Skills</h2>
-            <div className='sm:flex gap-5 md:justify-between md:pb-16'>
-                <div className="w-full p-4 bg-white border rounded-lg shadow-md sm:p-8 md:mb-0 mb-8">
-                    <h5 className="mb-4 text-xl font-medium text-gray-500">Front-end Development</h5>
-                    <ul className="space-y-5 my-7">
-                        <li className="flex space-x-3">
-                            <svg aria-hidden="true" className="flex-shrink-0 w-5 h-5 text-[#54CA95]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                            <span className="text-base font-normal leading-tight text-gray-500">HTML5</span>
-                        </li>
-                        <li className="flex space-x-3">
-                            <svg aria-hidden="true" className="flex-shrink-0 w-5 h-5 text-[#54CA95]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                            <span className="text-base font-normal leading-tight text-gray-500">CSS3</span>
-                        </li>
-                        <li className="flex space-x-3">
-                            <svg aria-hidden="true" className="flex-shrink-0 w-5 h-5 text-[#54CA95]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                            <span className="text-base font-normal leading-tight text-gray-500">Bootstrap</span>
-                        </li>
-                        <li className="flex space-x-3">
-                            <svg aria-hidden="true" className="flex-shrink-0 w-5 h-5 text-[#54CA95]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                            <span className="text-base font-normal leading-tight text-gray-500">Javascript</span>
-                        </li>
-                        <li className="flex space-x-3">
-                            <svg aria-hidden="true" className="flex-shrink-0 w-5 h-5 text-[#54CA95]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                            <span className="text-base font-normal leading-tight text-gray-500">React.js</span>
-                        </li>
-                    </ul>
-                </div>
-                <div className="w-full p-4 bg-white border rounded-lg shadow-md sm:p-8">
-                    <h5 className="mb-4 text-xl font-medium text-gray-500">Backend Development</h5>
-                    <ul className="space-y-5 my-7">
-                        <li className="flex space-x-3">
-                            <svg aria-hidden="true" className="flex-shrink-0 w-5 h-5 text-[#54CA95]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                            <span className="text-base font-normal leading-tight text-gray-500">Node.js</span>
-                        </li>
-                        <li className="flex space-x-3">
-                            <svg aria-hidden="true" className="flex-shrink-0 w-5 h-5 text-[#54CA95]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                            <span className="text-base font-normal leading-tight text-gray-500">Express.js</span>
-                        </li>
-                        <li className="flex space-x-3">
-                            <svg aria-hidden="true" className="flex-shrink-0 w-5 h-5 text-[#54CA95]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                            <span className="text-base font-normal leading-tight text-gray-500">MongoDB</span>
-                        </li>
-                        <li className="flex space-x-3">
-                            <svg aria-hidden="true" className="flex-shrink-0 w-5 h-5 text-[#54CA95]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                            <span className="text-base font-normal leading-tight text-gray-500">Javascript</span>
-                        </li>
-                        <li className="flex space-x-3">
-                            <svg aria-hidden="true" className="flex-shrink-0 w-5 h-5 text-[#54CA95]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                            <span className="text-base font-normal leading-tight text-gray-500">Vercel</span>
-                        </li>
-                    </ul>
-
+        <>
+            <div className='max-w-[1200px] mx-auto md:pt-0 pt-3' data-aos="zoom-in">
+                <h2 className='text-[23px] font-semibold mb-3 md:mx-0 mx-2'>Skills & Tools</h2>
+                <div className='my-7 grid grid-cols-3 md:grid-cols-7 gap-5 text-center'>
+                    <div className='flex items-center flex-col'>
+                        <img className='mb-2 w-20' src="https://i0.wp.com/gafish.fr/wp-content/uploads/2013/03/html5.png?resize=512%2C445&ssl=1" alt="" />
+                        <h2 className='font-medium'>HTML5</h2>
+                    </div>
+                    <div className='flex items-center flex-col'>
+                        <img className='mb-2 w-20' src="https://e7.pngegg.com/pngimages/893/87/png-clipart-web-development-html-cascading-style-sheets-css3-bootstrap-minimalist-resume-blue-angle.png" alt="" />
+                        <h2 className='font-medium'>CSS3</h2>
+                    </div>
+                    <div className='flex items-center flex-col'>
+                        <img className='mb-2 w-20' src="https://res.cloudinary.com/arcjet-media/image/upload/v1608734952/z8hzeszc9eb3sp3vp3qc.jpg" alt="" />
+                        <h2 className='font-medium'>Tailwind CSS</h2>
+                    </div>
+                    <div className='flex items-center flex-col'>
+                        <img className='mb-2 w-20' src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="" />
+                        <h2 className='font-medium'>Javascript</h2>
+                    </div>
+                    <div className='flex items-center flex-col'>
+                        <img className='mb-2 w-20' src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" alt="" />
+                        <h2 className='font-medium'>React.js</h2>
+                    </div>
+                    <div className='flex items-center flex-col'>
+                        <img className='mb-2 w-20' src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_f0b606abb6d19089febc9faeeba5bc05/nodejs-development-services.png" alt="" />
+                        <h2 className='font-medium'>Node.js</h2>
+                    </div>
+                    <div className='flex items-center flex-col'> 
+                        <img className='mb-2 w-20' src="https://miro.medium.com/max/512/1*doAg1_fMQKWFoub-6gwUiQ.png" alt="" />
+                        <h2 className='font-medium'>MongoDb</h2>
+                    </div>
                 </div>
             </div>
-
-        </div>
+        </>
     );
 };
 

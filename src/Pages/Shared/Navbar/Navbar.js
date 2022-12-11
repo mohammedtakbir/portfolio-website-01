@@ -25,14 +25,10 @@ const Navbar = () => {
                         }} className='text-sm font-medium text-gray-400 hover:text-[#333] duration-200' to='/blogs'>Blogs</NavLink>
                     </li>
                     <li className='md:ml-10 md:mb-0 mb-4'>
-                        <NavLink style={({ isActive }) => {
-                            return isActive ? { color: '#333' } : undefined
-                        }} className='text-sm font-medium text-gray-400 hover:text-[#333] duration-200' to='/contact'>Contact</NavLink>
+                        <a className='text-sm font-medium text-gray-400 hover:text-[#333] duration-200' href='#contact'>Contact</a>
                     </li>
                     <li className='md:ml-10 md:mb-0 mb-4'>
-                        <NavLink style={({ isActive }) => {
-                            return isActive ? { color: '#333' } : undefined
-                        }} className='text-sm font-medium text-gray-400 hover:text-[#333] duration-200' to='/about'>About me</NavLink>
+                        <a className='text-sm font-medium text-gray-400 hover:text-[#333] duration-200' href='#about'>About me</a>
                     </li>
                 </ul>
                 <div className='md:hidden md:pr-0 pr-3'>

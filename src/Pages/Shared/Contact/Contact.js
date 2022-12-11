@@ -26,16 +26,16 @@ const Contact = () => {
 
     return (
         <>
-            <div className='md:mx-0 mx-2'>
-                <div className='bg-[#FCFCFC] md:mt-5 mt-0 md:mb-16 mb-10'>
+            <div className='md:mx-0 mx-2 pt-10' id='contact'>
+                <div className='bg-[#FCFCFC] md:mt-5 mt-0 md:mb-16 mb-10' data-aos="zoom-in">
                     <div className="divider my-0"></div>
-                    <div className='md:flex md:justify-between container mx-auto md:py-0 py-6'>
-                        <h2 className='sm:text-[40px] text-[30px] md:my-14 font-semibold'>Contact</h2>
+                    <div className='md:flex md:justify-between container mx-auto md:py-0 py-6 max-w-[1200px]'>
+                        <h2 className='text-[23px] font-semibold md:my-14'>Contact</h2>
                         <p className='text-[#aaa] md:mt-2'>Get in Touch</p>
                     </div>
                     <div className="divider my-0"></div>
                 </div>
-                <div className='container mx-auto'>
+                <div className='max-w-[1200px] mx-auto' data-aos="zoom-in">
                     <div>
                         <iframe
                             className='block w-full'
@@ -71,7 +71,7 @@ const Contact = () => {
                             </div>
                         </div>
                         <div className='lg:w-[65%]'>
-                            <h3 className='text-2xl font-semibold'>How Can I Help You?</h3>
+                            <h3 className='text-xl font-semibold'>How Can I Help You?</h3>
                             <form
                                 ref={form}
                                 onSubmit={sendEmail}

@@ -9,7 +9,7 @@ const ProjectDetail = () => {
     const [projectDetail, setProjectDetail] = useState({});
     const [loading, setLoading] = useState(false);
 
-    const { descriptions, screen_shots, live_site, client_site, server_site } = projectDetail;
+    const { descriptions, screen_shots, live_site, client_site, server_site, project_name, title, tech } = projectDetail;
 
     useEffect(() => {
         setLoading(true)
@@ -38,7 +38,14 @@ const ProjectDetail = () => {
                     ))
                 }
             </div>
-            <div className='my-5 mx-2'>
+            <div className='mx-2 mt-5 mb-3'>
+                <h2 className='text-3xl font-semibold'>{project_name}</h2>
+                <p className='font-medium'>{title}</p>
+                <p className='text-sm font-medium'>
+                    Technologies: {tech}
+                </p>
+            </div>
+            <div className='mx-2'>
                 <h2 className='text-2xl font-medium'>Features</h2>
                 {
                     descriptions?.map(description => (
@@ -46,7 +53,7 @@ const ProjectDetail = () => {
                     ))
                 }
             </div>
-            <div className='pt-2 mx-2'>
+            <div className='pt-5 mx-2'>
                 <a href={live_site} target='_blank'>
                     <button
                         className='sm:px-5 px-4 sm:py-[10px] py-[8px] border-[#54CA95] border-2 rounded-3xl hover:bg-[#54CA95] hover:text-[#fff] duration-300 mr-3'>
