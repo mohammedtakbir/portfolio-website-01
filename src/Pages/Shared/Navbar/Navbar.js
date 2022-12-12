@@ -15,20 +15,20 @@ const Navbar = () => {
                 </Link>
                 <ul className={`md:bg-transparent bg-gray-100 rounded-lg md:flex md:justify-end md:static absolute w-full text-center z-10 ${open ? 'top-12' : 'top-[-250px]'}`}>
                     <li className='md:ml-10 md:mb-0 mb-4 md:pt-0 pt-4'>
-                        <NavLink style={({ isActive }) => {
+                        <NavLink onClick={() => setOpen(!open)} style={({ isActive }) => {
                             return isActive ? { color: '#333' } : undefined
                         }} className='text-sm font-medium text-gray-400 hover:text-[#333] duration-200' to='/'>Home</NavLink>
                     </li>
                     <li className='md:ml-10 md:mb-0 mb-4'>
-                        <NavLink style={({ isActive }) => {
+                        <NavLink onClick={() => setOpen(!open)} style={({ isActive }) => {
                             return isActive ? { color: '#333' } : undefined
                         }} className='text-sm font-medium text-gray-400 hover:text-[#333] duration-200' to='/blogs'>Blogs</NavLink>
                     </li>
                     <li className='md:ml-10 md:mb-0 mb-4'>
-                        <a className='text-sm font-medium text-gray-400 hover:text-[#333] duration-200' href='#contact'>Contact</a>
+                        <a onClick={() => setOpen(!open)} className='text-sm font-medium text-gray-400 hover:text-[#333] duration-200' href='#contact'>Contact</a>
                     </li>
                     <li className='md:ml-10 md:mb-0 mb-4'>
-                        <a className='text-sm font-medium text-gray-400 hover:text-[#333] duration-200' href='#about'>About me</a>
+                        <a onClick={() => setOpen(!open)} className='text-sm font-medium text-gray-400 hover:text-[#333] duration-200' href='#about'>About me</a>
                     </li>
                 </ul>
                 <div className='md:hidden md:pr-0 pr-3'>

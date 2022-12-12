@@ -26,7 +26,7 @@ const ProjectDetail = () => {
     }
 
     return (
-        <div className='md:max-w-[1300px] sm:w-full max-w-[500px] mx-auto md:pt-16 pt-10'>
+        <div className='md:max-w-[1300px] sm:w-full max-w-[500px] mx-auto md:pt-16 pt-10' data-aos="zoom-in">
             <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 justify-center mx-2'>
                 {
                     screen_shots?.map(shot => (

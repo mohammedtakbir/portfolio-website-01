@@ -14,13 +14,13 @@ const Header = () => {
                 <div className='md:w-[52%] sm:pt-0 pt-10 md:mx mx-2' data-aos="fade-left" data-aos-duration="1500">
                     <h4 className='text-[#333]'>
                         <Typewriter
-
                             words={['Front-end Developer', 'React.js Developer', 'MERN Stack Developer']}
                             loop={true}
                         />
+                        <span className='invisible'>a</span>
                     </h4>
                     <h2 className='sm:text-[48px] text-[38px] font-semibold sm:mt-2 mt-1 sm:mb-3 mb-1'>Takbir Hossain</h2>
-                    <p className='text-[#666] mb-[30px]'>I'm a web developer with a focus on the MERN stack, but still exploring other technologies and frameworks that catch my interest! if you're looking for a developer to add to your team, I'd love to hear from you!</p>
+                    <p className='text-[#666] mb-[30px]'>I'm a web developer focusing on the Front-end Development, Javascript, and MERN stack but still exploring other technologies and frameworks that catch my interest. if you're looking for a developer to add to your team, I'd love to hear from you!</p>
                     <div>
                         <a href="https://drive.google.com/file/d/1BAnYLIQUkhNqM8wUzqP3LiTRy4tyI-0w/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                             <button
