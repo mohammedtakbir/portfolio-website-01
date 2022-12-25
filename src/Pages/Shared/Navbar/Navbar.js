@@ -9,7 +9,7 @@ const Navbar = () => {
         <div className='container mx-auto sm:py-5 py-3'>
             <nav className='md:container mx-auto flex justify-between items-center relative'>
                 <Link to='/' className='flex items-center md:ml-0 ml-2'>
-                    <span className='bg-[#54CA95] font-black text-3xl w-[45px] h-[45px] rounded-full text-center leading-[45px] text-white'>T</span>
+                    <span className='bg-[#54CA95] font-black sm:text-3xl text-[26px] sm:w-[45px] w-[40px] sm:h-[45px] h-[40px] rounded-full text-center sm:leading-[45px] leading-[40px] text-white'>T</span>
                     <span className='mx-2 font-semibold text-2xl'>Takbir</span>
                     <span className='text-2xl'>Hossain</span>
                 </Link>
@@ -34,8 +34,8 @@ const Navbar = () => {
                 <div className='md:hidden md:pr-0 pr-3'>
                     {
                         open ?
-                            <HiX onClick={() => setOpen(!open)} className="h-9 w-9 text-black cursor-pointer" /> :
-                            <HiMenuAlt3 onClick={() => setOpen(!open)} className="h-9 w-9 text-black cursor-pointer" />
+                            <HiX onClick={() => setOpen(!open)} className="h-8 w-8 text-black cursor-pointer" /> :
+                            <HiMenuAlt3 onClick={() => setOpen(!open)} className="h-8 w-8 text-black cursor-pointer" />
                     }
                 </div>
             </nav>

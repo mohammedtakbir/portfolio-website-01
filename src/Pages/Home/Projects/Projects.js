@@ -27,11 +27,18 @@ const Projects = () => {
     ]
     return (
         <div className='md:max-w-[1200px] sm:w-full max-w-[500px] mx-auto md:pt-10 mt-3'>
-            <h2 className='text-[23px] font-semibold mb-4 md:mx-0 mx-2' data-aos="zoom-in">Recent Projects</h2>
+            <h2
+                className='text-[23px] font-semibold mb-4 md:mx-0 mx-2'
+                data-aos="fade-up"
+                data-aos-once="true"
+                data-aos-duration="1000"
+            >
+                Recent Projects
+            </h2>
             <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 md:mx-0 mx-2'>
                 {
-                    projects.map((project, i) => <Project
-                        key={i}
+                    projects.map((project) => <Project
+                        key={project.id}
                         project={project}
                     />)
                 }

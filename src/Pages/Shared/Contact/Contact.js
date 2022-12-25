@@ -31,7 +31,12 @@ const Contact = () => {
     return (
         <>
             <div className='md:mx-0 mx-2 pt-10' id='contact'>
-                <div className='bg-[#FCFCFC] md:mt-5 mt-0 md:mb-16 mb-10' data-aos="zoom-in">
+                <div
+                    className='bg-[#FCFCFC] md:mt-5 mt-0 md:mb-16 mb-10'
+                    data-aos="fade-up"
+                    data-aos-once="true"
+                    data-aos-duration="1000"
+                >
                     <div className="divider my-0"></div>
                     <div className='md:flex md:justify-between container mx-auto md:py-0 py-6 max-w-[1200px]'>
                         <h2 className='text-[23px] font-semibold md:my-14'>Contact</h2>
@@ -39,7 +44,12 @@ const Contact = () => {
                     </div>
                     <div className="divider my-0"></div>
                 </div>
-                <div className='max-w-[1200px] mx-auto' data-aos="zoom-in">
+                <div
+                    className='max-w-[1200px] mx-auto'
+                    data-aos="fade-up"
+                    data-aos-once="true"
+                    data-aos-duration="1000"
+                >
                     <div>
                         <iframe
                             className='block w-full'
@@ -87,21 +97,21 @@ const Contact = () => {
                                             name="user_name"
                                             type="text"
                                             placeholder="Full Name"
-                                            className="input input-bordered"
+                                            className="input input-bordered text-sm"
                                             required
                                         />
                                         <input
                                             name="user_email"
                                             type="email"
                                             placeholder="Email Address"
-                                            className="input input-bordered"
+                                            className="input input-bordered text-sm"
                                             required
                                         />
                                         <input
                                             name='subject'
                                             type="text"
                                             placeholder="subject"
-                                            className="input input-bordered"
+                                            className="input input-bordered text-sm"
                                             required
                                         />
                                     </div>
