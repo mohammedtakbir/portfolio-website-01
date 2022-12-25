@@ -6,3 +6,7 @@ body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
 }
+::selection{
+  background-color: #54CA95;
+  color: #fff;
+}
