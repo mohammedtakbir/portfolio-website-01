@@ -7,7 +7,7 @@ import performance from '../../../assets/performance.png';
 const WhatIDo = () => {
 
     return (
-        <div className='max-w-[1200px] mx-auto md:pb-16 pb-10 md:pt-0 pt-8'>
+        <div className='max-w-[1200px] mx-auto md:pb-[100px] pb-10 md:pt-0 pt-10'>
             <h2
                 className='text-[23px] font-semibold mb-4 md:mx-0 mx-2 text-primary'
                 data-aos="fade-up"

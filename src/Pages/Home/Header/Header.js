@@ -7,7 +7,7 @@ const Header = () => {
 
     return (
         <div className='container mx-auto'>
-            <div className='md:flex justify-center items-center xl:py-[80px] md:py-[70px] pt-5 xl:px-[150px]'>
+            <div className='md:flex justify-center items-center xl:py-[90px] md:py-[70px] pt-5 xl:px-[150px]'>
                 <div
                     className='md:w-[45%]'
                     data-aos="fade-right"

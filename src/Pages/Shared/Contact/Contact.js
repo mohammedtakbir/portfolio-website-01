@@ -30,7 +30,7 @@ const Contact = () => {
 
     return (
         <>
-            <div className='md:mx-0 mx-2 pt-10' id='contact'>
+            <div className='md:mx-0 mx-2 md:pt-16 pt-10' id='contact'>
                 <div
                     className='md:mt-5 mt-0 md:mb-16 mb-10 bg-background'
                     data-aos="fade-up"
@@ -97,21 +97,21 @@ const Contact = () => {
                                             name="user_name"
                                             type="text"
                                             placeholder="Full Name"
-                                            className="input input-bordered text-sm"
+                                            className="input input-bordered text-sm bg-accent text-primary"
                                             required
                                         />
                                         <input
                                             name="user_email"
                                             type="email"
                                             placeholder="Email Address"
-                                            className="input input-bordered text-sm"
+                                            className="input input-bordered text-sm bg-accent text-primary"
                                             required
                                         />
                                         <input
                                             name='subject'
                                             type="text"
                                             placeholder="subject"
-                                            className="input input-bordered text-sm"
+                                            className="input input-bordered text-sm bg-accent text-primary"
                                             required
                                         />
                                     </div>
@@ -119,7 +119,7 @@ const Contact = () => {
                                         name="message"
                                         id="message"
                                         rows="4"
-                                        className="sm:w-[50%] w-full sm:mt-0 mt-4 block p-2.5 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300"
+                                        className="sm:w-[50%] w-full sm:mt-0 mt-4 block p-2.5 text-sm bg-accent text-primary rounded-lg"
                                         placeholder="Message..."
                                         required
                                     >

@@ -43,10 +43,10 @@ const Navbar = () => {
                     <li className='md:ml-10 md:mb-0 mb-4 md:pt-0 pt-4'>
                         <NavLink
                             onClick={() => setOpen(!open)}
-                            style={({ isActive }) => {
-                                return isActive ? { color: '#333' } : undefined
-                            }}
-                            className='text-sm font-medium text-gray-400 hover:text-[#333] duration-200'
+                            /* style={({ isActive }) => {
+                                return isActive ? { textDecoration: 'underline' } : undefined
+                            }} */
+                            className='text-sm font-medium text-secondary hover:text-primary duration-200'
                             to='/'
                         >
                             Home
@@ -55,10 +55,10 @@ const Navbar = () => {
                     <li className='md:ml-10 md:mb-0 mb-4'>
                         <NavLink
                             onClick={() => setOpen(!open)}
-                            style={({ isActive }) => {
-                                return isActive ? { color: '#333' } : undefined
-                            }}
-                            className='text-sm font-medium text-gray-400 hover:text-[#333] duration-200'
+                            /* style={({ isActive }) => {
+                                return isActive ? { textDecoration: 'underline' } : undefined
+                            }} */
+                            className='text-sm font-medium text-secondary hover:text-primary duration-200'
                             to='/blogs'
                         >
                             Blogs
@@ -67,7 +67,7 @@ const Navbar = () => {
                     <li className='md:ml-10 md:mb-0 mb-4'>
                         <a
                             onClick={() => setOpen(!open)}
-                            className='text-sm font-medium text-gray-400 hover:text-[#333] duration-200'
+                            className='text-sm font-medium text-secondary hover:text-primary duration-200'
                             href='#contact'
                         >
                             Contact
@@ -76,7 +76,7 @@ const Navbar = () => {
                     <li className='md:ml-10 md:mb-0 mb-4'>
                         <a
                             onClick={() => setOpen(!open)}
-                            className='text-sm font-medium text-gray-400 hover:text-[#333] duration-200'
+                            className='text-sm font-medium text-secondary hover:text-primary duration-200'
                             href='#about'
                         >
                             About me
@@ -84,7 +84,7 @@ const Navbar = () => {
                     </li>
                     <li className='md:ml-5 md:mb-0 mb-4'>
                         <button onClick={handleThemeChange} className='text-lg font-medium mt-1'>
-                            {theme ? <BsFillSunFill className='text-white' /> : <BsFillMoonFill />}
+                            {theme ? <BsFillSunFill className='text-white' /> : <BsFillMoonFill className='text-gray-400' />}
                         </button>
                     </li>
                 </ul>

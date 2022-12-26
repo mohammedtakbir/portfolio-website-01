@@ -26,7 +26,7 @@ const Projects = () => {
         }
     ]
     return (
-        <div className='md:max-w-[1200px] sm:w-full max-w-[500px] mx-auto md:pt-10 mt-3'>
+        <div className='md:max-w-[1200px] sm:w-full max-w-[500px] mx-auto md:pt-16 mt-3'>
             <h2
                 className='text-[23px] font-semibold mb-4 md:mx-0 mx-2'
                 data-aos="fade-up"

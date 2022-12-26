@@ -3,7 +3,7 @@ import img from '../../../assets/img2.jpg'
 
 const About = () => {
     return (
-        <div id='about' className='max-w-[1200px] mx-auto md:pt-16 pt-10'>
+        <div id='about' className='max-w-[1200px] mx-auto md:pt-[100px] pt-10'>
             <div className="hero">
                 <div className="hero-content flex-col md:flex-row items-start gap-6">
                     <img
