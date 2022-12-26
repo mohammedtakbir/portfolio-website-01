@@ -32,15 +32,15 @@ const Contact = () => {
         <>
             <div className='md:mx-0 mx-2 pt-10' id='contact'>
                 <div
-                    className='bg-[#FCFCFC] md:mt-5 mt-0 md:mb-16 mb-10'
+                    className='md:mt-5 mt-0 md:mb-16 mb-10 bg-background'
                     data-aos="fade-up"
                     data-aos-once="true"
                     data-aos-duration="1000"
                 >
                     <div className="divider my-0"></div>
                     <div className='md:flex md:justify-between container mx-auto md:py-0 py-6 max-w-[1200px]'>
-                        <h2 className='text-[23px] font-semibold md:my-14'>Contact</h2>
-                        <p className='text-[#aaa] md:mt-2'>Get in Touch</p>
+                        <h2 className='text-[23px] font-semibold md:my-14 text-primary'>Contact</h2>
+                        <p className='md:mt-2 text-secondary'>Get in Touch</p>
                     </div>
                     <div className="divider my-0"></div>
                 </div>
@@ -65,27 +65,27 @@ const Contact = () => {
                             <div className='flex gap-5 md:mb-9 mb-5'>
                                 <FaMobileAlt className='text-3xl text-[#54CA95]' />
                                 <div>
-                                    <h5 className='font-medium'>+8801836314043</h5>
-                                    <p className='text-sm text-[#aaa]'>My Phone Number.</p>
+                                    <h5 className='font-medium text-primary'>+8801836314043</h5>
+                                    <p className='text-sm text-secondary'>My Phone Number.</p>
                                 </div>
                             </div>
                             <div className='flex gap-5 md:mb-9 mb-5'>
                                 <FaMapMarkerAlt className='text-3xl text-[#54CA95]' />
                                 <div>
-                                    <h5 className='font-medium'>Narayanganj, Bangladesh</h5>
-                                    <p className='text-sm text-[#aaa]'>My Location.</p>
+                                    <h5 className='font-medium text-primary'>Narayanganj, Bangladesh</h5>
+                                    <p className='text-sm text-secondary'>My Location.</p>
                                 </div>
                             </div>
                             <div className='flex gap-5 md:mb-9 mb-5'>
                                 <HiMail className='text-3xl text-[#54CA95]' />
                                 <div>
-                                    <h5 className='font-medium'>takbirhossain678@gmail.com</h5>
-                                    <p className='text-sm text-[#aaa]'>My Email Address.</p>
+                                    <h5 className='font-medium text-primary'>takbirhossain678@gmail.com</h5>
+                                    <p className='text-sm text-secondary'>My Email Address.</p>
                                 </div>
                             </div>
                         </div>
                         <div className='lg:w-[65%]'>
-                            <h3 className='text-xl font-semibold'>How Can I Help You?</h3>
+                            <h3 className='text-xl font-semibold text-primary'>How Can I Help You?</h3>
                             <form
                                 ref={form}
                                 onSubmit={sendEmail}
@@ -127,7 +127,7 @@ const Contact = () => {
                                 </div>
                                 <button
                                     type='submit'
-                                    className='sm:px-5 px-4 sm:py-[10px] py-[8px] border-[#54CA95] border-2 rounded-3xl hover:bg-[#54CA95] hover:text-[#fff] duration-300 mt-7'>
+                                    className='sm:px-5 px-4 sm:py-[10px] py-[8px] border-[#54CA95] border-2 rounded-3xl hover:bg-[#54CA95] hover:text-[#fff] duration-300 mt-7 text-primary'>
                                     Send Message
                                 </button>
                             </form>

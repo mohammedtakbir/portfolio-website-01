@@ -36,13 +36,13 @@ const WhatIDo = () => {
     return (
         <>
             <div className='max-w-[1200px] mx-auto md:pt-0 pt-3' data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
-                <h2 className='text-[23px] font-semibold mb-3 md:mx-0 mx-2'>Skills & Tools</h2>
+                <h2 className='text-[23px] font-semibold mb-3 md:mx-0 mx-2 text-primary'>Skills & Tools</h2>
                 <div className='my-7 grid grid-cols-3 xl:grid-cols-7 md:grid-cols-6 sm:grid-cols-4 gap-5 text-center'>
                     {
                         skills.map((skill, i) => (
                             <div key={i} className='flex items-center flex-col hover:scale-110 duration-500 cursor-pointer'>
                                 <img className='mb-2 w-20 h-[75px]' src={skill.image} alt="" />
-                                <h2 className='font-medium'>{skill.name}</h2>
+                                <h2 className='font-medium text-primary'>{skill.name}</h2>
                             </div>
                         ))
                     }

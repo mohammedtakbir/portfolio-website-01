@@ -12,7 +12,7 @@ const Footer = () => {
                                 <span className='bg-[#54CA95] font-black text-[26px] w-[40px] h-[40px] rounded-full text-center leading-[45px] text-white'>T</span>
                             </div>
                             <ul className="flex flex-wrap items-center space-x-4 sm:space-x-8">
-                                <li className='text-sm'>
+                                <li className='text-sm text-secondary'>
                                     © 2022 All rights reserved. Takbir Hossain
                                 </li>
                             </ul>
@@ -21,7 +21,7 @@ const Footer = () => {
                             <li>
                                 <a
                                     target='_blank'
-                                    className='hover:text-black duration-200'
+                                    className='hover:text-primary duration-200 font-semibold'
                                     rel="noopener noreferrer"
                                     href="https://www.linkedin.com/in/takbirhossain/"
                                 >
@@ -31,7 +31,7 @@ const Footer = () => {
                             <li>
                                 <a
                                     target='_blank'
-                                    className='hover:text-black duration-200'
+                                    className='hover:text-primary duration-200 font-semibold'
                                     rel="noopener noreferrer"
                                     href="https://github.com/mohammedtakbir"
                                 >
@@ -41,7 +41,7 @@ const Footer = () => {
                             <li>
                                 <a
                                     target='_blank'
-                                    className='hover:text-black duration-200'
+                                    className='hover:text-primary duration-200 font-semibold'
                                     rel="noopener noreferrer"
                                     href="https://www.facebook.com/mdtakbirhossain.hossain"
                                 >
@@ -51,7 +51,7 @@ const Footer = () => {
                             <li>
                                 <a
                                     target='_blank'
-                                    className='hover:text-black duration-200'
+                                    className='hover:text-primary duration-200 font-semibold'
                                     rel="noopener noreferrer"
                                     href="https://twitter.com/TakbirMohammed"
                                 >

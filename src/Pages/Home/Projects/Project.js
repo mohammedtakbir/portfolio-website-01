@@ -5,7 +5,12 @@ const Project = ({ project }) => {
     const { img, project_name, description, id } = project;
     return (
         <>
-            <div className="bg-white border border-gray-200 rounded-lg shadow-md" data-aos="zoom-in">
+            <div
+                className="bg-white border border-gray-200 rounded-lg shadow-md"
+                data-aos="fade-up"
+                data-aos-once="true"
+                data-aos-duration="1000"
+            >
                 <Link to="#">
                     <img className="rounded-t-lg h-[350px] w-full" src={img} alt="" />
                 </Link>
@@ -16,7 +21,7 @@ const Project = ({ project }) => {
                     <p className="mb-3 font-normal text-gray-700">{description}</p>
                     <div className=''>
                         <Link
-                        to={`/project-detail/${id}`}
+                            to={`/project-detail/${id}`}
                             className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#54CA95] rounded-lg hover:bg-[#54CA95] focus:ring-4 focus:outline-none focus:ring-[#54CA95]"
                         >
                             Explore More
