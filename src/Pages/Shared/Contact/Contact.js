@@ -22,7 +22,6 @@ const Contact = () => {
             .then((result) => {
                 e.target.reset();
                 toast.success('Message sent successfully!')
-                console.log(result.text);
             }, (error) => {
                 console.log(error.text);
             });
@@ -30,7 +29,7 @@ const Contact = () => {
 
     return (
         <>
-            <div className='md:mx-0 mx-2 md:pt-16 pt-10' id='contact'>
+            <div className='xl:mx-0 mx-2 md:pt-16 pt-10' id='contact'>
                 <div
                     className='md:mt-5 mt-0 md:mb-16 mb-10 bg-background'
                     data-aos="fade-up"

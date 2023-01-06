@@ -1,5 +1,5 @@
 import React from 'react';
-import img from '../../../assets/img2.jpg'
+import about_img from '../../../assets/about_img.png'
 
 const About = () => {
     return (
@@ -7,8 +7,8 @@ const About = () => {
             <div className="hero">
                 <div className="hero-content flex-col md:flex-row items-start gap-6">
                     <img
-                        src={img}
-                        className="max-w-2xl mx-auto h-[450px] rounded-lg shadow-2xl"
+                        src={about_img}
+                        className="sm:h-[450px] h-[350px] rounded-lg shadow-2xl max-w-full mx-auto"
                         alt=''
                         data-aos="fade-up"
                         data-aos-duration="1000"
