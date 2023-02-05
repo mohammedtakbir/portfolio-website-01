@@ -14,7 +14,7 @@ const Header = () => {
                     data-aos-once="true"
                 >
                     <img
-                        className='lg:w-[400px] w-[300px] lg:h-[400px] h-[300px] border-[10px] border-white rounded-full mx-auto shadow-xl'
+                        className='lg:w-[400px] w-[300px] lg:h-[400px] h-[300px] border-[10px] border-gray-500 rounded-full mx-auto shadow-xl shadow-gray-900'
                         src={img} alt=""
                     />
                 </div>

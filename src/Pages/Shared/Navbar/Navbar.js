@@ -29,7 +29,7 @@ const Navbar = () => {
     }, [theme])
 
     return (
-        <div className='container mx-auto sm:py-5 py-3'>
+        <div className='max-w-[1200px] mx-auto sm:py-5 py-3'>
             <nav className='md:container mx-auto flex justify-between items-center relative'>
                 <Link to='/' className='flex items-center xl:ml-0 ml-2'>
                     <span
@@ -84,11 +84,11 @@ const Navbar = () => {
                             About me
                         </a>
                     </li>
-                    <li className='md:ml-7 md:mb-0 mb-4 xl:mr-0 sm:mr-2'>
+                    {/* <li className='md:ml-7 md:mb-0 mb-4 xl:mr-0 sm:mr-2'>
                         <button onClick={handleThemeChange} className='text-[16px] font-medium mt-[7px]'>
                             {theme ? <BsFillSunFill className='text-white' /> : <BsFillMoonFill className='text-gray-500' />}
                         </button>
-                    </li>
+                    </li> */}
                 </ul>
                 <div className='md:hidden md:pr-0 pr-3'>
                     {
